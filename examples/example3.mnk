@@ -1,0 +1,9 @@
+let add = fn (a, b, c) { a + b + c }
+
+let partial = fn (a, b) {
+    fn (c) { add( a, b, c ) }
+}
+
+let val = partial(1, 2)
+
+print( val(3) )

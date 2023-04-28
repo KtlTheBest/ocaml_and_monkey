@@ -1,0 +1,1 @@
+val read_token: Lexing.lexbuf -> Parser.token
